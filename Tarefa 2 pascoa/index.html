@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Páscoa no Mundo</title>
+<style>
+  /* Reset and base */
+  body, html {
+    margin: 0; padding: 0; height: 100%;
+    font-family: Arial, sans-serif;
+    animation: backgroundColorChange 30s infinite alternate;
+    transition: background-color 1s ease;
+  }
+  @keyframes backgroundColorChange {
+    0% {background-color: #4b4b2f;}
+    20% {background-color: #7a3a4a;}
+    40% {background-color: #3a4a5a;}
+    60% {background-color: #3a5a3a;}
+    80% {background-color: #7a4a3a;}
+    100% {background-color: #5a3a5a;}
+  }
+  header {
+    background: #222;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0; padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  .content-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  .text-block {
+    flex: 1 1 55%;
+    min-width: 280px;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  .image-card {
+    flex: 1 1 35%;
+    min-width: 200px;
+    max-width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+  .image-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  .image-card:hover img {
+    transform: scale(1.1);
+  }
+  /* Superscript and subscript on images */
+  .image-card sup {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1rem;
+    color: #333;
+    background: rgba(255,255,255,0.7);
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  .image-card sub {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 1rem;
+    color: #333;
+    background: rgba(255,255,255,0.7);
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  footer {
+    background: #111;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .footer-logos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .footer-logos img {
+    width: 40px;
+    height: auto;
+    
+  }
+  
+  /* Special spacing paragraphs */
+  .spaces-5 {
+    white-space: pre-wrap;
+  }
+  .spaces-20 {
+    white-space: pre-wrap;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Páscoa no Mundo</h1>
+  <nav>
+    <ul>
+      <li><a href="https://pt.wikipedia.org/wiki/P%C3%A1scoa" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+      <li><a href="https://www.history.com/topics/holidays/easter" target="_blank" rel="noopener noreferrer">History.com</a></li>
+      <li><a href="https://www.britannica.com/topic/Easter-holiday" target="_blank" rel="noopener noreferrer">Britannica</a></li>
+      <li><a href="https://www.nationalgeographic.com/culture/article/easter-celebrations-around-the-world" target="_blank" rel="noopener noreferrer">NatGeo</a></li>
+      <li><a href="https://www.bbc.co.uk/religion/religions/christianity/holydays/easter_1.shtml" target="_blank" rel="noopener noreferrer">BBC Religion</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <div class="content-row">
+      <div class="text-block">
+        <p><b>Páscoa</b> é uma celebração <i>importante</i> em muitas culturas ao redor do mundo. <em>Originalmente</em>, ela comemora a ressurreição de Jesus Cristo, mas também incorpora tradições pagãs e símbolos da <del>primavera</del>. A palavra Páscoa vem do hebraico <sup>Pesach</sup>, que significa passagem.</p>
+        <p>Em muitos países, a Páscoa é marcada por ovos de chocolate, coelhos e festivais coloridos. <sub>Esses símbolos</sub> representam fertilidade e renovação. Além disso, a data é móvel, variando conforme o calendário lunar.</p>
+      </div>
+      <div class="image-card">
+        <img src="imagens pascoa/pascoa1.png" alt="Ovos de Páscoa coloridos" />
+        <sup>¹</sup>
+        <sub>Eggs</sub>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <div class="text-block">
+        <p>Na <b>Alemanha</b>, a tradição do <i>Osterbaum</i> envolve decorar árvores com ovos coloridos. <em>Essa prática</em> simboliza a vida e a esperança. <del>Curiosamente</del>, a árvore é um símbolo antigo de fertilidade e proteção.</p>
+        <p>Já na <b>Itália</b>, a Páscoa é celebrada com procissões religiosas e pratos típicos, como o <sub>Colomba Pasquale</sub>, um bolo em forma de pomba. <br /><br />Essas tradições refletem a rica história cultural do país.</p>
+      </div>
+      <div class="image-card">
+        <img src="imagens pascoa/pascoa2.jpg" alt="Árvore de Páscoa na Alemanha" />
+        <sup>²</sup>
+        <sub>Osterbaum</sub>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <div class="text-block">
+        <p>Nos <b>Estados Unidos</b>, a Páscoa é celebrada com eventos comunitários, caça aos ovos e desfiles. <em>O coelho da Páscoa</em> é um personagem popular que traz ovos para as crianças. <del>Além disso</del>, muitas famílias frequentam serviços religiosos.</p>
+        <p class="spaces-5">Este parágrafo tem 5 espaços em branco no início: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e continua com o texto normalmente.</p>
+      </div>
+      <div class="image-card">
+        <img src="imagens pascoa/pascoa3.webp" alt="Coelho da Páscoa nos EUA" />
+        <sup>³</sup>
+        <sub>Bunny</sub>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <div class="text-block">
+        <p>Na <b>Austrália</b>, a Páscoa é celebrada com festivais ao ar livre e eventos esportivos. <em>Curiosamente</em>, o coelho não é um símbolo popular devido ao impacto ambiental que eles causam. <del>Em vez disso</del>, o bilby, um marsupial nativo, é usado como símbolo da Páscoa.</p>
+        <p class="spaces-20">Este parágrafo tem 20 espaços em branco no início: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e continua com o texto normalmente.</p>
+      </div>
+      <div class="image-card">
+        <img src="imagens pascoa/pascoa4.png" alt="Bilby, símbolo da Páscoa na Austrália" />
+        <sup>⁴</sup>
+        <sub>Bilby</sub>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <div class="text-block">
+        <p>Na <b>Polônia</b>, a Páscoa é celebrada com a bênção dos alimentos e a tradição do <em>Śmigus-Dyngus</em>, onde as pessoas jogam água umas nas outras. <del>Essa prática</del> simboliza purificação e renovação.</p>
+        <p>Além disso, as decorações de ovos, chamadas <sub>pisanki</sub>, são uma arte tradicional polonesa com desenhos complexos e coloridos.</p>
+      </div>
+      <div class="image-card">
+        <img src="imagens pascoa/pascoa5.webp" alt="Ovos decorados poloneses" />
+        <sup>⁵</sup>
+        <sub>Pisanki</sub>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <div class="text-block">
+        <p>Na <b>Grécia</b>, a Páscoa é a celebração religiosa mais importante do ano. <em>As igrejas</em> realizam missas especiais e fogos de artifício são comuns. <del>O vermelho</del> é a cor tradicional dos ovos, simbolizando o sangue de Cristo.</p>
+        <p>As famílias se reúnem para um grande banquete após a missa da meia-noite.</p>
+      </div>
+      <div class="image-card">
+        <img src="imagens pascoa/pasco6.jpg" alt="Celebração da Páscoa na Grécia" />
+        <sup>⁶</sup>
+        <sub>Grécia</sub>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <div class="text-block">
+        <p>Na <b>Brasil</b>, a Páscoa é celebrada com missas, procissões e a troca de ovos de chocolate. <em>O feriado</em> é uma oportunidade para reunir a família e refletir sobre a renovação espiritual. <del>Além disso</del>, muitas cidades realizam eventos culturais e feiras.</p>
+        <p>Ovos de chocolate são vendidos em abundância, e as crianças aguardam ansiosamente a caça aos ovos.</p>
+      </div>
+      <div class="image-card">
+        <img src="imagens pascoa/pascoa7.jpg" alt="Páscoa no Brasil" />
+        <sup>⁷</sup>
+        <sub>Brasil</sub>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <div class="text-block">
+        <p>Na <b>Filipinas</b>, a Páscoa é marcada por procissões e dramatizações da Paixão de Cristo. <em>É uma das celebrações</em> religiosas mais fervorosas do país. <del>Os fiéis</del> participam de jejuns e orações durante a Semana Santa.</p>
+        <p>O domingo de Páscoa é comemorado com festas e reuniões familiares.</p>
+      </div>
+      <div class="image-card">
+        <img src="imagens pascoa/pascoa8.jpg" alt="Procissão de Páscoa nas Filipinas" />
+        <sup>⁸</sup>
+        <sub>Filipinas</sub>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <div class="text-block">
+        <p>Na <b>Suécia</b>, a Páscoa é celebrada com crianças fantasiadas de bruxas que pedem doces, semelhante ao Halloween. <em>Essa tradição</em> é uma mistura de costumes antigos e modernos. <del>As casas</del> são decoradas com galhos e penas coloridas.</p>
+        <p>É comum as pessoas trocarem cartões e presentes durante a Páscoa.</p>
+      </div>
+      <div class="image-card">
+        <img src="imagens pascoa/pascoa9.jpg" alt="Páscoa na Suécia" />
+        <sup>⁹</sup>
+        <sub>Suécia</sub>
+      </div>
+    </div>
+
+    <div class="content-row">
+      <div class="text-block">
+        <p>Finalmente, a Páscoa é um momento de <b>renovação</b> e esperança para milhões de pessoas. <em>Seja qual for</em> a tradição, o espírito de união e fé prevalece. <del>Que esta celebração</del> traga paz e alegria a todos.</p>
+        <p>Feliz Páscoa! &amp;  &lt; &gt; &quot; &apos; &nbsp; &iexcl; &cent; &pound; &euro; &yen; &curren; &reg; &trade; &sect; &deg; &plusmn; &times; &divide; &para;<p>
+      </div>
+      <div class="image-card">
+        <img src="imagens pascoa/pascoa10.jpg" alt="Celebração de Páscoa" />
+        <sup>¹⁰</sup>
+        <sub>Celebration</sub>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>Referências: Feito com IA e implementações minhas </p>
+  <div class="footer-logos">
+    <a href="https://pt.wikipedia.org/wiki/P%C3%A1scoa" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia Logo" title="Wikipedia" />
+    </a>
+    <a href="https://www.history.com/topics/holidays/easter" target="_blank" rel="noopener noreferrer">
+      <img src="imagens logo/logo chrome.png" alt="History.com Logo" title="History.com" />
+    </a>
+    <a href="https://www.britannica.com/topic/Easter-holiday" target="_blank" rel="noopener noreferrer">
+      <img src="imagens logo/britannica.jpg" alt="Britannica Logo" title="Britannica" />
+    </a>
+    <a href="https://www.nationalgeographic.com/culture/article/easter-celebrations-around-the-world" target="_blank" rel="noopener noreferrer">
+      <img src="imagens logo/Logo-national-geographic-transparent-background-PNG.png" alt="National Geographic Logo" title="National Geographic" />
+    </a>
+    <a href="https://www.bbc.co.uk/religion/religions/christianity/holydays/easter_1.shtml" target="_blank" rel="noopener noreferrer">
+      <img src="imagens logo/BBC-Logo.wine.png" alt="BBC Logo" title="BBC" />
+    </a>
+  </div>
+    <p>&copy; 2025 - Todos os direitos reservados: BlackBox & João Vitor</p>
+</footer>
+</body>
+</html>
